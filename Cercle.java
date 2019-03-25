@@ -4,18 +4,18 @@ public class Cercle {
     Cercle(){
     }
     Cercle(Cercle c){
-        x=c.x;
-        y=c.y;
+        this.x=c.x;
+        this.y=c.y;
     }
     Cercle(float xx, float yy)
     {
-        x=xx;
-        y=yy;
+        this.x=xx;
+        this.y=yy;
     }
  
     @Override
     public String toString(){
-        return x + " " + y;
+        return this.x + " " + this.y;
     }
 
     @Override
@@ -31,4 +31,8 @@ public class Cercle {
         c2.toString();
         if (c1.equals(c3))c3.toString();
     }
+    public float GetX(){return this.x;}
+    public void SetX(float value){this.x = value;}
+    public float GetY(){return this.y;}
+    public void SetY(float value){this.y = value;}
 }
