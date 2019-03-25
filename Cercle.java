@@ -22,4 +22,8 @@ public class Cercle {
     public boolean equals(Object o){
         return(this == o);
     }
+    public float GetX(){return this.x;}
+    public void SetX(float value){this.x = value;}
+    public float GetY(){return this.y;}
+    public void SetY(float value){this.y = value;}
 }
